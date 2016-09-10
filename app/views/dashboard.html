@@ -1,30 +1,30 @@
 <div>
-	<h4>My Dashboard</h4>
+    <h4>My Dashboard</h4>
 </div>
 
 <div>
-	<h4>My Teams</h4>
-	<form>
-		<input ng-model="userdata.teams_joined"></input>
-	</form>
+    <h4>My Teams</h4>
+    <form>
+        <input ng-model="userdata.teams_joined"></input>
+    </form>
 </div>
 
 <div ng-controller="ButtonsCtrl">
+    
     <h4></h4>
-    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
-        Create a Team
-    </button>
+    <a href="views/createteam.html">
+        <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+            Create a Team
+        </button>
+    </a>
 
 
     <h4></h4>
-    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
-        Join a Team
-    </button>
-
-    <h4></h4>
-    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
-        Find a Team
-    </button>
+    <a href="http://www.stackoverflow.com/">
+        <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+            Join a Team
+        </button>
+    </a>
 
 </div>
 
