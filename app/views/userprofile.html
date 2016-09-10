@@ -1,6 +1,8 @@
 
 <div>
-
+<div>
+    <h2>User Profile</h2>
+</div>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title" style="color:black">
@@ -41,7 +43,9 @@
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-            <p>{{userdata.skills}}</p>
+          <ul>
+            <li ng-repeat="skill in userdata.skills">{{ skill }}</li>
+          </ul>
         </h4>
       </div>
     </div>
@@ -56,7 +60,9 @@
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-            <p>{{userdata.skill_category}}</p>
+          <ul>
+            <li ng-repeat="skill in userdata.skill_category">{{ skill }}</li>
+          </ul>
         </h4>
       </div>
     </div>
@@ -71,7 +77,9 @@
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-            <p>{{userdata.area_of_interest}}</p>
+          <ul>
+            <li ng-repeat="area in userdata.area_of_interest">{{ area }}</li>
+          </ul>
         </h4>
       </div>
     </div>
@@ -86,7 +94,9 @@
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-            <p>{{userdata.preferred_language}}</p>
+          <ul>
+            <li ng-repeat="language in userdata.preferred_language">{{ language }}</li>
+          </ul>
         </h4>
       </div>
     </div>    

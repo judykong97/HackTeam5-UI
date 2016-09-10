@@ -26,6 +26,20 @@ body {
   background-size: cover;
 }
 
+h2 {
+   color: white;
+   font-size: 400%
+}
+
+h3 {
+   color: white;
+   font-size: 1000 px
+}
+
+h4 {
+   color: white;
+   font-size: 1000 px
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
