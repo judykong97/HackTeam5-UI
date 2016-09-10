@@ -10,7 +10,9 @@
 angular.module(
         'hackTeam5UiApp',
         [ 'ngAnimate', 'ngCookies', 'ngResource', 'ui.router', 'ngSanitize',
-                'ngTouch', 'ui.bootstrap', 'firebase' ]).config(function($stateProvider) {
+                'ngTouch', 'ui.bootstrap', 'firebase' ]).run(function() {
+}).config(function($stateProvider) {
+
     $stateProvider.state({
         name : 'dashboard',
         url : '',
@@ -46,4 +48,11 @@ angular.module(
         controller : 'createTeamCtrl',
         controllerAs : 'createTeam'
     })
+
+    firebase.initializeApp({
+        apiKey : "AIzaSyAbqbDs-3OyeYr_SFRRezldqqRzJDy1prk",
+        authDomain : "hackathonmatcher.firebaseapp.com",
+        databaseURL : "https://hackathonmatcher.firebaseio.com",
+        storageBucket : "hackathonmatcher.appspot.com",
+    });
 });
