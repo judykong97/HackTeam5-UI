@@ -40,6 +40,12 @@ angular.module(
         controller : 'loginCtrl',
         controllerAs : 'login'
     }).state({
+        name : 'register',
+        url : '/register',
+        templateUrl : 'views/register.html',
+        controller : 'registerCtrl',
+        controllerAs : 'register'
+    }).state({
         name : 'createTeam',
         url : '/createTeam',
         templateUrl : 'views/createteam.html',
