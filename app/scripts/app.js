@@ -35,6 +35,7 @@ angular
         controller: 'UserprofileCtrl',
         controllerAs: 'userProfile'
       })
+
       .when('/teamProfile', {
         templateUrl: 'views/teamprofile.html',
         controller: 'TeamprofileCtrl',
@@ -45,6 +46,18 @@ angular
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard'
       })
+
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'loginCtrl',
+        controllerAs: 'login'
+	     })
+      .when('/createTeam', {
+        templateUrl: 'views/createteam.html',
+        controller: 'createTeamCtrl',
+        controllerAs: 'createTeam'
+       })
+
       .otherwise({
         redirectTo: '/'
       });
