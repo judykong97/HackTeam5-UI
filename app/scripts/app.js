@@ -10,7 +10,7 @@
 angular.module(
         'hackTeam5UiApp',
         [ 'ngAnimate', 'ngCookies', 'ngResource', 'ui.router', 'ngSanitize',
-                'ngTouch', 'ui.bootstrap' ]).config(function($stateProvider) {
+                'ngTouch', 'ui.bootstrap', 'firebase' ]).config(function($stateProvider) {
     $stateProvider.state({
         name : 'dashboard',
         url : '',
