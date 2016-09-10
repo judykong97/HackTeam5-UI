@@ -61,7 +61,7 @@ angular.module('hackTeam5UiApp').service(
                     // Post welcome message
                 } else {
                     // State change to login
-                    $state.$go('login');
+                    $state.go('login');
                 }
             });
         });
