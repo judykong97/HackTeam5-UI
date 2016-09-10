@@ -19,6 +19,7 @@ angular.module('hackTeam5UiApp')
 			id: 1,
 			pic_id: "abcd",
 			skills: ["java", "c++"],
+			teams_joined: ["fake hackers","null"]
 			personality: "a little bit shy",
 			skill_category: ["backend","database"],
 			area_of_interest: ["music","health","history"],
