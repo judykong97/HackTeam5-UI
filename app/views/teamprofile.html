@@ -1,6 +1,137 @@
 <div>
-	<form>
-		<input ng-model="teamdata.id"></input>
-		<input ng-model="teamdata.team_name"></input>
-	</form>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Team Name
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.team_name}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Spots Available
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.spots_available}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Blurb
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.blurb}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Them of Hack
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.theme_of_hack}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Current Team Members
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.existing_members}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Current Skill Sets
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.current_skill_sets}}</p>
+        </h4>
+      </div>
+    </div>    
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Location
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.location}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Looking for Skills
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.looking_for_skills}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Has a Guru?
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{teamdata.has_a_guru}}</p>
+        </h4>
+      </div>
+    </div>
 </div>

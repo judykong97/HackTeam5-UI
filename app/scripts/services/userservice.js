@@ -25,9 +25,9 @@ angular.module('hackTeam5UiApp')
 			area_of_interest: ["music","health","history"],
 			preferred_language: ["English", "French"],
 			resume_id: "asdfafdsad",
-			full_time: true,
-			free_agents: false,
-			is_a_guru: false
+			full_time: "Yes",
+			free_agents: "No",
+			is_a_guru: "Yes"
 		});
   	};
     // AngularJS will instantiate a singleton by calling "new" on this function
