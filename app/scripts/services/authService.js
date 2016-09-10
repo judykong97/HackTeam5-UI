@@ -6,8 +6,8 @@
  * @description # teamService Service in the hackTeam5UiApp.
  */
 angular.module('hackTeam5UiApp').service(
-        'teamService',
-        function($q, $firebaseAuth) {
+        'authService',
+        function($q, $firebaseAuth, $state) {
             /** Private authobject that methods use */
             var authObject = $firebaseAuth();
             /**
@@ -31,6 +31,12 @@ angular.module('hackTeam5UiApp').service(
                         });
             };
             /**
+             * 
+             */
+            this.authStatus = function () {
+                return authObject.$getAuth();
+            };
+            /**
              * Registers a new user credential set with the database. On success
              * logs the user id.
              * 
@@ -42,11 +48,20 @@ angular.module('hackTeam5UiApp').service(
              *         success
              */
             this.registerUserCred = function(email, password) {
-                return authObj.$createUserWithEmailAndPassword(email, password)
+                return authObject.$createUserWithEmailAndPassword(email, password)
                 .then(function(firebaseUser) {
                   console.log("User " + firebaseUser.uid + " with email address "+ email +" created successfully!");
                 }).catch(function(error) {
                   console.error("Error: ", error);
                 });
             };
+            
+            authObject.$onAuthStateChanged(function (firebaseUser) {
+                if(firebaseUser) {
+                    // Post welcome message
+                } else {
+                    // State change to login
+                    $state.$go('login');
+                }
+            });
         });
