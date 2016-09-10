@@ -1,5 +1,4 @@
 <h2>Registration</h2>
-<h4>First Name</h4>
 <form class="form-horizontal" name="registration">
 	<div class="form-group">
 		<label for="reg-fname" class="control-label col-xs-6 col-s-3">First
@@ -35,19 +34,31 @@
 	<div class="form-group">
 		<label for="reg-lang" class="control-label col-xs-6 col-s-3">Skills</label>
 		<div class="col-xs-6 col-s-9">
-		<input id="reg-lang" class="form-control" type="text" name="reg-lang">
+			<input id="reg-lang" class="form-control" type="text" name="reg-lang">
 		</div>
-		<h4>Preferred Language</h4>
-		<input type="text" name="">
 	</div>
-	<h4>Attending As:</h4>
-	<form action="">
-		<input type="radio" name="category" value="Competitor">
-		Competitor<br> <input type="radio" name="category"
-			value="Observer"> Observer<br> <input type="radio"
-			name="category" value="Mentor"> Mentor <br>
-	</form>
-	<h4>Personal Description</h4>
+
+	<div class="form-group">
+		<label for="reg-attend" class="control-label col-xs-6 col-s-3"> Attend As</label>
+		<div class="col-xs-6 col-s-9" id="reg-attend">
+			<div class="radio">
+				<label>
+					<input value="Competitor" type="radio" name="reg-attend" ng-model="reg.attendType">Competitor
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input value="Observer" type="radio" name="reg-attend" ng-model="reg.attendType">Observer
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input value="Mentor" type="radio" name="reg-attend" ng-model="reg.attendType">Mentor
+				</label>
+			</div>
+		</div>
+	</div>
+	<h5><b>Personal Description</b></h5>
 	<textarea rows="6" cols="75">
 What are you like?
 </textarea>
