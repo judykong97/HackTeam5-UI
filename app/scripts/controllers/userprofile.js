@@ -11,8 +11,8 @@ angular.module('hackTeam5UiApp')
   .controller('UserprofileCtrl', ['$scope', 'userService', function ($scope, userService) {
     userService.getUser(1).then(
     	function (data) {
-    		$scope.data = data;
-    		console.log($scope.data);
+    		$scope.userdata = data;
+    		console.log($scope.userdata);
     	},
     	function (error) {
     		//TODO

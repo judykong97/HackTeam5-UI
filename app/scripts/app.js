@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -33,6 +34,16 @@ angular
         templateUrl: 'views/userprofile.html',
         controller: 'UserprofileCtrl',
         controllerAs: 'userProfile'
+      })
+      .when('/teamProfile', {
+        templateUrl: 'views/teamprofile.html',
+        controller: 'TeamprofileCtrl',
+        controllerAs: 'teamProfile'
+      })
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'DashboardCtrl',
+        controllerAs: 'dashboard'
       })
       .otherwise({
         redirectTo: '/'

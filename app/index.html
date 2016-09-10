@@ -43,6 +43,8 @@
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/">Contact</a></li>
               <li><a ng-href="#/userProfile">User Profile</a></li>
+              <li><a ng-href="#/teamProfile">Team Profile</a></li>
+              <li><a ng-href="#/dashboard">Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -91,6 +93,15 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/userprofile.js"></script>
         <script src="scripts/services/userservice.js"></script>
+        <script src="scripts/services/teamservice.js"></script>
+        <script src="scripts/controllers/teamprofile.js"></script>
+        <script src="scripts/services/dashboard.js"></script>
+        <script src="scripts/controllers/dashboard.js"></script>
         <!-- endbuild -->
+
+        <!-- copied from stackoverflow, in order to make sure bootstrap is running -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+        <!-- no idea how this fixes everything -->
+
 </body>
 </html>
