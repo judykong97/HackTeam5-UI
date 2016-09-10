@@ -21,7 +21,8 @@ angular.module('hackTeam5UiApp').service('userService',
 
                 var usersRecord = $firebaseObject(ref);
                 // Build the new record
-                var user = {
+                // Attach the new record
+                usersRecord[userId] = {
                     name_first : userReg.name_first,
                     name_last : userReg.name_last,
                     email : userReg.email,
@@ -29,8 +30,6 @@ angular.module('hackTeam5UiApp').service('userService',
                     attendtype : userReg.attendType,
                     bio : userReg.bio
                 };
-                // Attach the new record
-                usersRecord[userId] = userReg;
                 return usersRecord.$save();
             };
 

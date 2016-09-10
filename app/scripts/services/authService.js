@@ -25,7 +25,7 @@ angular.module('hackTeam5UiApp').service(
             this.authenticate = function(email, password) {
                 return authObject.$signInWithEmailAndPassword(email, password)
                         .then(function(firebaseUser) {
-                            console.log(username, firebaseUser);
+                            console.log(email, firebaseUser);
                         }, function(error) {
                             console.log(error);
                         });

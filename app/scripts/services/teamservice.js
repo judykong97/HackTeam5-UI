@@ -25,6 +25,6 @@ angular.module('hackTeam5UiApp')
 			has_a_guru: false,
 			looking_for_skills: ["UI", "leadership(?)"]
   		});
-  	}
+  	};
     // AngularJS will instantiate a singleton by calling "new" on this function
   });

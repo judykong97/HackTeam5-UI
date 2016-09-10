@@ -53,7 +53,7 @@ angular.module(
         templateUrl : 'views/createteam.html',
         controller : 'createTeamCtrl',
         controllerAs : 'createTeam'
-    })
+    });
 
     firebase.initializeApp({
         apiKey : "AIzaSyAbqbDs-3OyeYr_SFRRezldqqRzJDy1prk",
