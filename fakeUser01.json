@@ -1,0 +1,13 @@
+{
+	id: 1,
+	pic_id: "abcd",
+	skills: ["java", "c++"],
+	personality: "a little bit shy",
+	skill_category: ["backend","database"],
+	area_of_interest: ["music","health","history"],
+	preferred_language: ["English", "French"],
+	resume_id: "asdfafdsad",
+	full_time: true,
+	free_agents: false,
+	is_a_guru: false
+}
