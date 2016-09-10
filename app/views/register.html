@@ -1,38 +1,67 @@
 <h2>Registration</h2>
-<h4>First Name</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Last Name</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Email Address</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Password</h4>
-<form>
-	<input type="password" name="">
-</form>
-<h4>Skills</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Preferred Language</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Attending As:</h4>
-<form action="">
-  <input type="radio" name="category" value="Competitor"> Competitor<br>
-  <input type="radio" name="category" value="Observer"> Observer<br>
-  <input type="radio" name="category" value="Mentor"> Mentor <br>
-</form>
-<h4>Personal Description</h4>
-<textarea rows="6" cols="75">
+<form class="form-horizontal" name="registration">
+	<div class="form-group">
+		<label for="reg-fname" class="control-label col-xs-6 col-s-3">First
+			Name</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-fname" class="form-control" type="text"
+				name="reg-fname" ng-model="reg.name_first" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="reg-lname" class="control-label col-xs-6 col-s-3">Last
+			Name </label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-lname" class="form-control" type="text"
+				name="reg-lname" ng-model="reg.name_last" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="reg-email" class="control-label col-xs-6 col-s-3">Email
+			Address</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-email" class="form-control" type="email" name="reg-email"
+				ng-model="reg.email" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="reg-pwd" class="control-label col-xs-6 col-s-3">Password</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-pwd" class="form-control" type="password" name="reg-pwd"
+				ng-model="reg.pwd" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="reg-lang" class="control-label col-xs-6 col-s-3">Skills</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-lang" class="form-control" type="text" name="reg-lang">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="reg-attend" class="control-label col-xs-6 col-s-3"> Attend As</label>
+		<div class="col-xs-6 col-s-9" id="reg-attend">
+			<div class="radio">
+				<label>
+					<input value="Competitor" type="radio" name="reg-attend" ng-model="reg.attendType">Competitor
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input value="Observer" type="radio" name="reg-attend" ng-model="reg.attendType">Observer
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input value="Mentor" type="radio" name="reg-attend" ng-model="reg.attendType">Mentor
+				</label>
+			</div>
+		</div>
+	</div>
+	<h5><b>Personal Description</b></h5>
+	<textarea rows="6" cols="75">
 What are you like?
-</textarea><br>
-<button type="button" class="btn btn-primary">
-	Submit      	
-</button>
+</textarea>
+	<br>
+	<button type="button" class="btn btn-primary" ng-click="submitReg()">
+		Submit</button>
