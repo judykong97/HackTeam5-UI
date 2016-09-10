@@ -13,7 +13,7 @@ angular.module(
                 'ngTouch', 'ui.bootstrap' ]).config(function($stateProvider) {
     $stateProvider.state({
         name : 'dashboard',
-        url : '/',
+        url : '',
         templateUrl : 'views/dashboard.html',
         controller : 'DashboardCtrl'
     }).state({
@@ -39,6 +39,12 @@ angular.module(
         templateUrl : 'views/login.html',
         controller : 'loginCtrl',
         controllerAs : 'login'
+    }).state({
+        name : 'register',
+        url : '/register',
+        templateUrl : 'views/register.html',
+        controller : 'registerCtrl',
+        controllerAs : 'register'
     }).state({
         name : 'createTeam',
         url : '/createTeam',
