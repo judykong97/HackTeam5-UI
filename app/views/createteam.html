@@ -1,24 +1,64 @@
 <h2>Create Your Team</h2>
-<h4>Team Name</h4>
-<form>
-	<input type="text" name="">
+
+<!-- ng-models!!!! -->
+
+<form class="form-horizontal" name="createTeam">
+	<div class="form-group">
+		<label for="reg - teamName" class="control-label col-xs-6 col-s-3">
+			Team Name
+		</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-teamName" class="form-control" type="text" name="reg-teamName"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="numMembers" class="control-label col-xs-6 col-s-3">
+			Max Team Capacity
+		</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-numMembers" class="form-control" type="text" name="reg-numMembers"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="hackTheme" class="control-label col-xs-6 col-s-3">
+			Theme of Hack
+		</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-hackTheme" class="form-control" type="text" name="reg-hackTheme"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="hackTheme" class="control-label col-xs-6 col-s-3">
+			Theme of Hack
+		</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-hackTheme" class="form-control" type="text" name="reg-hackTheme"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="teamSkills" class="control-label col-xs-6 col-s-3">
+			Team Skills
+		</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-teamSkills" class="form-control" type="text" name="reg-teamSkills"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="moreSkills" class="control-label col-xs-6 col-s-3">
+			Theme of Hack
+		</label>
+		<div class="col-xs-6 col-s-9">
+			<input id="reg-moreSkills" class="form-control" type="text" name="reg-moreSkills"/>
+		</div>
+	</div>
+
 </form>
-<h4>Max Number of Members</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Theme of Hack</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Team Skills</h4>
-<form>
-	<input type="text" name="">
-</form>
-<h4>Searching For</h4>
-<form>
-	<input type="text" name="">
-</form>
-<button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+ 
+<button type="button" id = "submitTeam" class="btn btn-primary">
     Submit
 </button>
