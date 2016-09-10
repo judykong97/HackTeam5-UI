@@ -12,6 +12,6 @@ angular.module('hackTeam5UiApp')
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma'
+      'Karma', 'Bananas'
     ];
   });
