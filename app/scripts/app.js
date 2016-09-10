@@ -13,7 +13,7 @@ angular.module(
                 'ngTouch', 'ui.bootstrap' ]).config(function($stateProvider) {
     $stateProvider.state({
         name : 'dashboard',
-        url : '/',
+        url : '',
         templateUrl : 'views/dashboard.html',
         controller : 'DashboardCtrl'
     }).state({
