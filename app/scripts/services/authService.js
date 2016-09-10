@@ -51,6 +51,7 @@ angular.module('hackTeam5UiApp').service(
                 return authObject.$createUserWithEmailAndPassword(email, password)
                 .then(function(firebaseUser) {
                   console.log("User " + firebaseUser.uid + " with email address "+ email +" created successfully!");
+                  return firebaseUser;
                 }).catch(function(error) {
                   console.error("Error: ", error);
                 });
