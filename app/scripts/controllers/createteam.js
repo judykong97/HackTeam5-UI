@@ -8,7 +8,7 @@
  * Controller of the hackTeam5UiApp
  */
 angular.module('hackTeam5UiApp')
-  .controller('loginCtrl', function () {
+  .controller('createTeamCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -38,7 +38,12 @@ angular
         templateUrl: 'views/login.html',
         controller: 'loginCtrl',
         controllerAs: 'login'
-	})
+	     })
+      .when('/createTeam', {
+        templateUrl: 'views/createteam.html',
+        controller: 'createTeamCtrl',
+        controllerAs: 'createTeam'
+       })
       .otherwise({
         redirectTo: '/'
       });
