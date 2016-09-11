@@ -50,10 +50,19 @@ angular.module('hackTeam5UiApp')
                                 .child(id);
                         var userRecord = $firebaseObject(ref);
                         return userRecord.$loaded().then(function() {
-                            return obj;
+                            console.log(userRecord); // TODO remove this.
+                                                        // Just here to see the
+                                                        // type.
+                            return userRecord;
                         });
                     };
-                    // AngularJS will instantiate a singleton by calling "new"
-                    // on this
-                    // function
+                    this.updateUser = function(id, userRecord) {
+                        console.log(id, userRecord);
+                        // TODO
+                    };
+
+                    this.deleteUser = function(id) {
+                        console.log(id);
+                        // TODO
+                    };
                 });

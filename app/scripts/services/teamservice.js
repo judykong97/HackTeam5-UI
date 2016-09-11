@@ -10,7 +10,8 @@
 angular.module('hackTeam5UiApp')
   .service('teamService', function ($q) {
   	this.getTeam = function (id) {
-  		return $q.when({
+  		console.log('Asked for team id', id);
+  	    return $q.when({
   			id: 1,
 			pic_id: 1,
 			team_name: "fake hackers",
