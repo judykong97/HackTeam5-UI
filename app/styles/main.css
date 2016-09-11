@@ -9,6 +9,37 @@ body {
   padding: 0;
 }
 
+tr {
+  border-color: white;
+  border-style: solid;
+}
+
+table {
+  background-color: gray;
+  margin: 10px;
+
+}
+
+.name {
+  vertical-align: center;
+}
+
+.description {
+  vertical-align: top;
+}
+
+.crop {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+div.users {
+  background-color: gray;
+}
+
 #submitTeam {
   float: right;
 }
