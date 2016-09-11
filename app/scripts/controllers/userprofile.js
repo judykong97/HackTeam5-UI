@@ -15,7 +15,7 @@ angular.module('hackTeam5UiApp')
     		console.log($scope.userdata);
     	},
     	function (error) {
-    		//TODO
+    		console.log(error);//TODO
     	}
     );
   }]);
