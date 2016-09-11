@@ -63,7 +63,7 @@ angular.module(
             });
         }).run(function($rootScope, authService, $state) {
     $rootScope.$on('$stateChangeStart', function(event, toState) {
-        if (toState.name == "login") {
+        if (toState.name == "login" || toState.name == "register") {
             authService.logout();
         } else if (!(authService.getCurrentAuth())) {
             event.preventDefault();
