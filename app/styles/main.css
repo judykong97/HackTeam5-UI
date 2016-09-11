@@ -9,6 +9,36 @@ body {
   padding: 0;
 }
 
+.background {
+  
+  /* Position the background fixed to all four sides of the screen */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  /* Make sure that the background is behind the content */
+  z-index: -1;
+
+  /* set the color of the background to gray */
+  background-color: #497285;
+  background-size: cover;
+}
+
+h2 {
+   color: white;
+   font-size: 400%
+}
+
+h3 {
+   color: white;
+}
+
+h4 {
+   color: white;
+}
+
 #submitTeam {
   float: right;
 }

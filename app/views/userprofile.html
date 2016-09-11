@@ -1,5 +1,136 @@
+
 <div>
-	<form>
-		<input ng-model="userdata.id"></input>
-	</form>
+<div>
+    <h2>User Profile</h2>
+</div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Hacker Name
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{userdata.name_first + ' ' + userdata.name_last}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Self Description
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{userdata.bio}}</p>
+        </h4>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Skills
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+        {{userdata.skills}}
+        <!--{{userdata.skill_category}}
+           <ul>
+            <li ng-repeat="skill in userdata.skill_category">{{ skill }}</li>
+          </ul> -->
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Technical Fields of Expertise
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+        <div ng-model="userdata.skill_category"></div>
+           <ul>
+            <li ng-repeat="skill_cat in userdata.skill_category">{{ skill_cat }}</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Areas of Interest
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+          <ul>
+            <li ng-repeat="area in userdata.area_of_interest">{{ area }}</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Preferred Language
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+          <ul>
+            <li ng-repeat="language in userdata.preferred_language">{{ language }}</li>
+          </ul>
+        </h4>
+      </div>
+    </div>    
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Attendee Type
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{userdata.attendtype}}</p>
+        </h4>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="color:black">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              Is a Guru?
+            </span>
+          </a>
+        </h3>
+        <h4 class="panel-body" style="color:black">
+            <p>{{userdata.is_a_guru}}</p>
+        </h4>
+      </div>
+    </div>
 </div>

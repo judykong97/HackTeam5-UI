@@ -23,7 +23,7 @@ angular.module('hackTeam5UiApp')
 			existing_members: [1],
 			// location links to the location of the team (Not sure how this should be presented yet)
 			location: "ajsdfasdfasdf",
-			has_a_guru: false,
+			has_a_guru: "Yes",
 			looking_for_skills: ["UI", "leadership(?)"]
   		});
   	};
