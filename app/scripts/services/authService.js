@@ -23,17 +23,17 @@ angular.module('hackTeam5UiApp').service(
              *         success
              */
             this.authenticate = function(email, password) {
-                return authObject.$signInWithEmailAndPassword(username, password)
+                return authObject.$signInWithEmailAndPassword(email, password)
                         .then(function(firebaseUser) {
-                            console.log(username);
+                            return firebaseUser;
                         }, function(error) {
-                            console.log(error);
+                            return $q.reject(error);
                         });
             };
             /**
              * 
              */
-            this.authStatus = function () {
+            this.getCurrentAuth = function() {
                 return authObject.$getAuth();
             };
             /**
@@ -48,20 +48,28 @@ angular.module('hackTeam5UiApp').service(
              *         success
              */
             this.registerUserCred = function(email, password) {
-                return authObject.$createUserWithEmailAndPassword(email, password)
-                .then(function(firebaseUser) {
-                  console.log("User " + firebaseUser.uid + " with email address "+ email +" created successfully!");
-                }).catch(function(error) {
-                  console.error("Error: ", error);
-                });
+                return authObject.$createUserWithEmailAndPassword(email,
+                        password).then(
+                        function(firebaseUser) {
+                            console.log("User " + firebaseUser.uid
+                                    + " with email address " + email
+                                    + " created successfully!");
+                            return firebaseUser;
+                        }, function(error) {
+                            return $q.reject(error);
+                        });
             };
-            
-            authObject.$onAuthStateChanged(function (firebaseUser) {
-                if(firebaseUser) {
+
+            authObject.$onAuthStateChanged(function(firebaseUser) {
+                if (firebaseUser) {
                     // Post welcome message
                 } else {
                     // State change to login
                     $state.go('login');
                 }
             });
+            
+            this.logout = function () {
+                authObject.$signOut();
+            };
         });

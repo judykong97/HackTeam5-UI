@@ -20,48 +20,50 @@
 		<label for="reg-email" class="control-label col-xs-6 col-s-3">Email
 			Address</label>
 		<div class="col-xs-6 col-s-9">
-			<input id="reg-email" class="form-control" type="email" name="reg-email"
-				ng-model="reg.email" />
+			<input id="reg-email" class="form-control" type="email"
+				name="reg-email" ng-model="reg.email" />
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="reg-pwd" class="control-label col-xs-6 col-s-3">Password</label>
 		<div class="col-xs-6 col-s-9">
-			<input id="reg-pwd" class="form-control" type="password" name="reg-pwd"
-				ng-model="reg.pwd" />
+			<input id="reg-pwd" class="form-control" type="password"
+				name="reg-pwd" ng-model="reg.pwd" />
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="reg-lang" class="control-label col-xs-6 col-s-3">Skills</label>
 		<div class="col-xs-6 col-s-9">
-			<input id="reg-lang" class="form-control" type="text" name="reg-lang">
+			<input id="reg-lang" class="form-control" type="text" name="reg-lang"
+				ng-model="reg.skills" />
 		</div>
 	</div>
 
 	<div class="form-group">
-		<label for="reg-attend" class="control-label col-xs-6 col-s-3"> Attend As</label>
+		<label for="reg-attend" class="control-label col-xs-6 col-s-3">
+			Attend As</label>
 		<div class="col-xs-6 col-s-9" id="reg-attend">
 			<div class="radio">
-				<label>
-					<input value="Competitor" type="radio" name="reg-attend" ng-model="reg.attendType">Competitor
+				<label> <input value="Competitor" type="radio"
+					name="reg-attend" ng-model="reg.attendType">Competitor
 				</label>
 			</div>
 			<div class="radio">
-				<label>
-					<input value="Observer" type="radio" name="reg-attend" ng-model="reg.attendType">Observer
+				<label> <input value="Observer" type="radio"
+					name="reg-attend" ng-model="reg.attendType">Observer
 				</label>
 			</div>
 			<div class="radio">
-				<label>
-					<input value="Mentor" type="radio" name="reg-attend" ng-model="reg.attendType">Mentor
+				<label> <input value="Mentor" type="radio" name="reg-attend"
+					ng-model="reg.attendType">Mentor
 				</label>
 			</div>
 		</div>
 	</div>
-	<h5><b>Personal Description</b></h5>
-	<textarea rows="6" cols="75">
-What are you like?
-</textarea>
+	<h5>
+		<b>Personal Description</b>
+	</h5>
+	<textarea rows="6" cols="75" id="reg-bio" ng-model="reg.bio" placeholder="What are you like?"></textarea>
 	<br>
 	<button type="button" class="btn btn-primary" ng-click="submitReg()">
 		Submit</button>
