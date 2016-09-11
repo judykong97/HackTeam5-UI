@@ -21,6 +21,7 @@ angular.module('hackTeam5UiApp').controller(
                     $scope.submitReg = function() {
                         return authService.registerUserCred($scope.reg.email,
                                 $scope.reg.pwd).then(function(userCred) {
+                                    console.log(userCred);
                             userService.createUser(userCred.uid, $scope.reg);
                         });
 
