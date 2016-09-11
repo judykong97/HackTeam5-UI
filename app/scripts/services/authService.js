@@ -68,4 +68,8 @@ angular.module('hackTeam5UiApp').service(
                     $state.go('login');
                 }
             });
+            
+            this.logout = function () {
+                authObject.$signOut();
+            };
         });
