@@ -51,11 +51,5 @@ angular.module(
         templateUrl : 'views/createteam.html',
         controller : 'createTeamCtrl',
         controllerAs : 'createTeam'
-    }).state({
-        name : 'viewTeam',
-        url: '/viewTeam',
-        templateUrl : 'views/viewTeam.html',
-        controller : 'ViewteamCtrl',
-        controllerAs : 'viewTeam'
     })
 });
