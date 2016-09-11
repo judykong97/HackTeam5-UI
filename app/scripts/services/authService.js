@@ -54,6 +54,7 @@ angular.module('hackTeam5UiApp').service(
                             console.log("User " + firebaseUser.uid
                                     + " with email address " + email
                                     + " created successfully!");
+                            
                             return firebaseUser;
                         }, function(error) {
                             return $q.reject(error);
