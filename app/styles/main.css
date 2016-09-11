@@ -9,6 +9,8 @@ body {
   padding: 0;
 }
 
+
+
 tr {
   border-color: white;
   border-style: solid;
@@ -81,6 +83,10 @@ h3 {
 
 h4 {
    color: white;
+}
+
+div.register {
+  color: white;
 }
 
 #submitTeam {
@@ -220,47 +226,47 @@ img.img-circle {
 
 }
 
+h5 {
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+h6 {
+  margin-left: 50px;
+}
+
 
 
 .marketing .col-lg-4 {
   margin-bottom: 10px;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
 }
 .marketing h2 {
   font-weight: normal;
   font-size: 40px;
-  font-family: 'Indie Flower', cursive;
 }
 .marketing p{
-  font-family: 'Indie Flower', cursive;
 }
 .marketing .col-lg-4 p {
+  margin-top: 100px;
   margin-right: 10px;
   margin-left: 10px;
-  font-family: 'Indie Flower', cursive;
 }
 
 .left {
-  text-align: center;
-  float: left;
+  float: top;
   width: 350px;
-  margin-left: 130px;
-  margin-bottom: 50px;
+  margin-left: 200px;
 }
 
 .mid {
-  text-align: center;
   float: left;
   width: 350px;
-  margin-bottom: 50px;
 } 
 
 .right {
-  text-align: center;
   float: left;
-  width: 300px;
-  margin-bottom: 50px;
+  width: 350px;
 }
 
 
@@ -285,13 +291,15 @@ img.img-circle {
 
 
 .btn, .btn-large, .btn-flat {
-  border: none;
-  border-radius: 2px;
+  border: 10px;
+  border-radius: 5px;
   display: inline-block;
-  height: 36px;
+  margin-top: 50px;
+  margin-right: 5px;
+  height: 60px;
   line-height: 36px;
   outline: 0;
-  padding: 0 2rem;
+  padding: 0 10rem;
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
