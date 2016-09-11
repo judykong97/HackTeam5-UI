@@ -13,7 +13,7 @@
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-            <p>{{userdata.id}}</p>
+            <p>{{userdata.name_first + ' ' + userdata.name_last}}</p>
         </h4>
       </div>
     </div>
@@ -28,11 +28,11 @@
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-            <p>{{userdata.personality}}</p>
+            <p>{{userdata.bio}}</p>
         </h4>
       </div>
     </div>
-
+    
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title" style="color:black">
@@ -43,9 +43,11 @@
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-          <ul>
-            <li ng-repeat="skill in userdata.skills">{{ skill }}</li>
-          </ul>
+        {{userdata.skills}}
+        <!--{{userdata.skill_category}}
+           <ul>
+            <li ng-repeat="skill in userdata.skill_category">{{ skill }}</li>
+          </ul> -->
         </h4>
       </div>
     </div>
@@ -55,13 +57,14 @@
         <h3 class="panel-title" style="color:black">
           <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
             <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
-              Fields of Expertise
+              Technical Fields of Expertise
             </span>
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-          <ul>
-            <li ng-repeat="skill in userdata.skill_category">{{ skill }}</li>
+        <div ng-model="userdata.skill_category"></div>
+           <ul>
+            <li ng-repeat="skill_cat in userdata.skill_category">{{ skill_cat }}</li>
           </ul>
         </h4>
       </div>
@@ -106,27 +109,12 @@
         <h3 class="panel-title" style="color:black">
           <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
             <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
-              Full-Time Hacker?
+              Attendee Type
             </span>
           </a>
         </h3>
         <h4 class="panel-body" style="color:black">
-            <p>{{userdata.full_time}}</p>
-        </h4>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title" style="color:black">
-          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
-            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
-              Free Agent?
-            </span>
-          </a>
-        </h3>
-        <h4 class="panel-body" style="color:black">
-            <p>{{userdata.free_agents}}</p>
+            <p>{{userdata.attendtype}}</p>
         </h4>
       </div>
     </div>
